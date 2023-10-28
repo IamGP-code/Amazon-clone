@@ -11,10 +11,11 @@ import {
     DropdownMenuTrigger,
   } from "@/components/ui/dropdown-menu"
 import { FaCaretDown } from "react-icons/fa"; 
+import Search from '../ui/search';
 
 const SearchBox = () => {
   return (
-    <div className="flex w-full max-w-sm items-center rounded-md overflow-hidden">
+    <div className="flex w-max max-w-sm items-center rounded-md  ">
     <DropdownMenu >
   <DropdownMenuTrigger className='h-10 w-16 bg-slate-300 px-3 flex gap-2 justify-between items-center'>All 
   <FaCaretDown size={16}/>
@@ -31,7 +32,9 @@ const SearchBox = () => {
   </DropdownMenuContent>
 </DropdownMenu>
 
-    <Input type="email" placeholder="Search Amazon" className='rounded-none' />
+<Search placeholder="Search Amazon" className='rounded-none'/>
+
+    {/* <Input type="email" placeholder="Search Amazon" className='rounded-none' /> */}
     <Button type="submit" size="icon" className='bg-secondary rounded-none hover:bg-secondary w-16'>
         <BiSearch size={20} color="black"/>
         </Button>
