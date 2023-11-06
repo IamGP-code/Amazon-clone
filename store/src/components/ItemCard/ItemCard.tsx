@@ -1,3 +1,5 @@
+// 'use client';
+
 import React from 'react'
 import {
     Card,
@@ -23,17 +25,23 @@ import {
 import { Button } from '../ui/button'
 import { BiCaretDown } from 'react-icons/bi'
 
-
+interface IProps {
+  src: string ;
+  alt:string;
+  title:string;
+}
   
-const ItemCard = () => {
+const ItemCard = ({src,alt,title}: IProps) => {
   return (
-  <Card className='w-[230px] min-w-[230px] h-max border-gray-100 border-[0.3pt] bg-white border-gray-300 rounded-md'>
+  <Card className='w-[230px] min-w-[230px] h-[415px]  border-[0.3pt] bg-white border-gray-300 rounded-md'>
   <CardContent className='p-2 px-3 flex flex-col gap-2'>
     <div className='w-full aspect-square relative rounded-md overflow-hidden'>
-        <Image style={{objectFit: 'cover'}} src={"https://www.bigbasket.com/media/uploads/p/l/10000067_23-fresho-capsicum-green.jpg?tr=w-640,q=80"} alt='cabbage image' fill />
+        <Image style={{objectFit: 'cover'}} src={src} alt='cabbage image' fill />
+        {/* https://www.bigbasket.com/media/uploads/p/l/10000067_23-fresho-capsicum-green.jpg?tr=w-640,q=80 */}
         </div>    
-  <CardTitle className='line-clamp-2 text-sm'>
-    Fresho-capsicum-Green (Loose)
+  <CardTitle className='line-clamp-2 text-sm h-[45px]'>
+    {/* Fresho-capsicum-Green (Loose) */}
+   {title}
   </CardTitle>
   <Sheet>
       <SheetTrigger asChild>
