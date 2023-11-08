@@ -18,7 +18,7 @@ const ProfilePage = () => {
         <RiAccountPinCircleFill size={30} color="white" className="cursor-pointer"/>
 
   </SheetTrigger>
-  <SheetContent side={'right'}>
+    <SheetContent side={'right'}>
     <SheetHeader>
       <SheetTitle>Are you sure absolutely sure?</SheetTitle>
       <SheetDescription>

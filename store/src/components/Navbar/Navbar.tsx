@@ -28,8 +28,8 @@ const Navbar = () => {
 
   return (
     <>
-    <div className="w-full h-[60px] flex justify-between items-center px-4 bg-primary">
-      <div className="flex gap-4 items-center">
+    <div className="w-full h-[50px] flex justify-between items-center px-4 bg-primary">
+      <div className="flex gap-4 items-center justify-center">
         <ExtraOptions />
         <Image src={Logo} alt="logo" className="h-6 w-[80px] cursor-pointer" />
         {isLargeScreen ? (<AddressBar/>) : null } 
