@@ -7,6 +7,8 @@ import  tomatoPic  from '../../../public/tomato.png';
 import { GrSubtractCircle }  from 'react-icons/gr';
 import { GrAddCircle }  from 'react-icons/gr';
 import { Button } from '../ui/button';
+import image from 'next/image'
+
 
 interface IProps {
   price: number;
@@ -38,7 +40,7 @@ const CartAddItem = ({price} : IProps) => {
       
         <div className='flex  h-full gap-4'>
                       <div className='relative w-[60px] aspect-square'>
-                      <Image src={tomatoPic} alt='tomato' fill style={{objectFit: 'cover'}} />
+                      <Image src='../../../public/tomato.png' alt='tomato' fill style={{objectFit: 'cover'}} />
                       </div>
                       
             <div className='flex flex-col h-[70px] max-w-[160px] gap-1'>

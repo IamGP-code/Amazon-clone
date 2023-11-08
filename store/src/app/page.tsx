@@ -5,7 +5,7 @@ import BannerImg from './../../public/fruit_banner_BG.jpg';
 import ItemCard from "@/components/ItemCard/ItemCard";
 import Footer from "@/components/Footer/Footer";
 import Link from "next/link";
-
+import Image from 'next/image'
 
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
     <Navbar />
-    <Banner src={BannerImg} 
+    <Image src='../../public/fruit_banner_BG.jpg' 
     alt="banner image"/>
     <div className="flex flex-col px-6 py-4">
       <h1 className="py-4 text-2xl font-extrabold text-primary">"Veggies" Category</h1>
