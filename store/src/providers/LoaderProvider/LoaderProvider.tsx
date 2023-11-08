@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import Loader from "./../../../../public/Amazon_loader.svg";
+import Loader from "../../../public/Amazon_loader.svg";
 import Image from "next/image";
 
 interface IProps {

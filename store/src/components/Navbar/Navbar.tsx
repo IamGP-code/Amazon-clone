@@ -14,6 +14,7 @@ import { Badge } from "../ui/badge";
 import ExtraOptions from "../ExtraOptions/ExtraOptions";
 import React from "react";
 import CartSheet from "../CartSheet/CartSheet";
+import LoginPage from "../LoginPage/LoginPage";
 
 
 const Navbar = () => {
@@ -27,11 +28,7 @@ const Navbar = () => {
     <>
     <div className="w-full h-[60px] flex justify-between items-center px-4 bg-primary">
       <div className="flex gap-4 items-center">
-        {/* <GiHamburgerMenu > */}
-          {/* <Button variant="outline">Open</Button> */}
-        {/* </GiHamburgerMenu> */}
         <ExtraOptions />
-          {/* </GiHamburgerMenu> */}
         <Image src={Logo} alt="logo" className="h-6 w-[80px] cursor-pointer" />
         {isLargeScreen ? (<AddressBar/>) : null } 
         
@@ -48,7 +45,9 @@ const Navbar = () => {
         </Button>
         
         </div>
+        {/* <LoginPage /> */}
         <RiAccountPinCircleFill size={30} color="white" className="cursor-pointer"/>
+        {/* </LoginPage> */}
       {isLargeScreen ? (<Button variant={"outline"}>Returns</Button>) : null }
         
         
