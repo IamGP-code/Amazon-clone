@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-undef */
 "use client";
 
 
@@ -15,6 +16,7 @@ import ExtraOptions from "../ExtraOptions/ExtraOptions";
 import React from "react";
 import CartSheet from "../CartSheet/CartSheet";
 import LoginPage from "../LoginPage/LoginPage";
+import ProfilePage from "../ProfilePage/ProfilePage";
 
 
 const Navbar = () => {
@@ -45,9 +47,7 @@ const Navbar = () => {
         </Button>
         
         </div>
-        {/* <LoginPage /> */}
-        <RiAccountPinCircleFill size={30} color="white" className="cursor-pointer"/>
-        {/* </LoginPage> */}
+        <ProfilePage />
       {isLargeScreen ? (<Button variant={"outline"}>Returns</Button>) : null }
         
         

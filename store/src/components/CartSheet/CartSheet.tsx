@@ -53,6 +53,7 @@ const CartSheet = ({open, onOpenChange} : IProps) => {
       <CartAddItem price={500}/>
       <CartAddItem price={500}/>
       <CartAddItem price={500}/>
+
 </div>
 </ScrollArea>
     </SheetContent>
